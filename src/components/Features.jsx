@@ -8,11 +8,11 @@ export default function Features() {
     <section 
       ref={ref}
       id="features"
-      className={`py-20 bg-white transition-all duration-700 ease-out
+      className={`py-15 md:py-20 bg-white transition-all duration-700 ease-out
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
       <div className="max-w-4xl mx-auto px-6">
-        <h3 className="text-4xl font-extrabold text-center mb-12">
+        <h3 className="text-2xl md:text-4xl text-gray-900 font-extrabold text-center mb-10">
           Why Diaspora Clients Trust Us
         </h3>
 
@@ -41,7 +41,7 @@ export default function Features() {
         </ul>
       </div>
 
-      <div className="my-2 mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-gray-600 mx-10 md:mx-40">
+      <div className="my-2 mt-10 grid grid-cols-2 md:grid-cols-4 gap-6 text-sm text-gray-600 mx-10 md:mx-40">
         <div>✔ Verified Land Only</div>
         <div>✔ Client-Owned Titles</div>
         <div>✔ Bank-Secured Documents</div>

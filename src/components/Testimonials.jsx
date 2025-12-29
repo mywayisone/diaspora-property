@@ -9,11 +9,11 @@ export default function Testimonials() {
     <section
         ref={ref}
         id="testimonials" 
-        className={`py-20 bg-gray-900 text-gray-100 transition-all duration-700 ease-out
+        className={`py-15 md:py-20 bg-gray-900 text-gray-100 transition-all duration-700 ease-out
             ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
       <div className="max-w-6xl mx-auto px-6">
-        <h3 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">
+        <h3 className="text-2xl md:text-4xl font-bold text-center mb-12 text-white">
           What Our Clients Say
         </h3>
 

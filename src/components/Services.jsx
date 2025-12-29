@@ -9,11 +9,11 @@ export default function Services() {
     <section 
       ref={ref}
       id="services"
-      className={`py-20 bg-white transition-all duration-700 ease-out
+      className={`py-15 md:py-20 bg-white transition-all duration-700 ease-out
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
       <div className="max-w-6xl mx-auto px-6">
-        <h3 className="text-3xl md:text-4xl font-bold text-center text-gray-700 mb-12">
+        <h3 className="text-2xl md:text-4xl font-bold text-gray-900 text-center mb-12">
           Our Services
         </h3>
 

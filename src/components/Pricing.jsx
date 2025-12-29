@@ -21,25 +21,25 @@ export default function Pricing() {
       <div className="border p-6 rounded-xl shadow hover:shadow-lg transition">
         <h4 className="font-semibold text-gray-700 mb-2 text-lg">Land Acquisition</h4>
         <p className="text-sm text-gray-500">Akure only</p>
-        <button className="mt-8 px-8 py-3 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition">
+        <a className="mt-8 px-8 py-3 block w-fit mx-auto rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition" href="#contact">
           Request a Custom Quote
-        </button>
+        </a>
       </div>
 
       <div className="border p-6 rounded-xl shadow hover:shadow-lg transition">
         <h4 className="font-semibold text-gray-700 mb-2 text-lg">Property Development</h4>
         <p className="text-sm text-gray-500">Nationwide</p>
-        <button className="mt-8 px-8 py-3 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition">
+        <a className="mt-8 px-8 py-3 block w-fit mx-auto rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition" href="#contact">
           Request a Custom Quote
-        </button>
+        </a>
       </div>
 
       <div className="border p-6 rounded-xl shadow hover:shadow-lg transition">
         <h4 className="font-semibold text-gray-700 mb-2 text-lg">Full Concierge</h4>
         <p className="text-sm text-gray-500">End-to-end service</p>
-        <button className="mt-8 px-8 py-3 rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition">
+        <a className="mt-8 px-8 py-3 block w-fit mx-auto rounded-lg bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition" href="#contact">
           Request a Custom Quote
-        </button>
+        </a>
       </div>
     </div>
   </div>

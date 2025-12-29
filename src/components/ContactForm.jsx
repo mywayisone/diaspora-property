@@ -98,14 +98,14 @@ export default function ContactForm() {
 
           <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
             <input
-              className="w-full border rounded-lg p-3"
+              className="w-full border-0 shadow rounded-lg p-3"
               name="full_name"
               placeholder="Full Name"
               required
             />
 
             <input
-              className="w-full border rounded-lg p-3"
+              className="w-full border-0 shadow rounded-lg p-3"
               name="email"
               type="email"
               placeholder="Email Address"
@@ -113,19 +113,19 @@ export default function ContactForm() {
             />
 
             <input
-              className="w-full border rounded-lg p-3"
+              className="w-full border-0 shadow rounded-lg p-3"
               name="country"
               placeholder="Country of Residence"
             />
 
             <input
-              className="w-full border rounded-lg p-3"
+              className="w-full border-0 shadow rounded-lg p-3"
               name="location"
               placeholder="Property Location"
             />
 
             <select
-              className="w-full border rounded-lg p-3"
+              className="w-full border-0 shadow rounded-lg p-3"
               name="service"
               required
             >
@@ -136,7 +136,7 @@ export default function ContactForm() {
             </select>
 
             <textarea
-              className="w-full border rounded-lg p-3"
+              className="w-full border-0 shadow rounded-lg p-3"
               name="message"
               placeholder="Project Details"
               rows={4}

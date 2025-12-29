@@ -9,7 +9,7 @@ export default function Services() {
     <section 
       ref={ref}
       id="services"
-      className={`py-15 md:py-20 bg-white transition-all duration-700 ease-out
+      className={`py-15 md:py-20 bg-white/60 transition-all duration-700 ease-out
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
     >
       <div className="max-w-6xl mx-auto px-6">
@@ -21,7 +21,7 @@ export default function Services() {
           <motion.div 
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="p-6 border rounded-xl shadow hover:shadow-lg"
+            className="p-6 border-0 bg-gray-50 rounded-xl shadow-lg hover:shadow-xl"
           >
             <h4 className="text-xl font-bold mb-3 text-gray-700">Land Acquisition (Akure)</h4>
             <p className="text-gray-700">
@@ -36,22 +36,22 @@ export default function Services() {
           <motion.div  
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="p-6 border rounded-xl shadow hover:shadow-lg"
+            className="p-6 border-0 bg-gray-50 rounded-xl shadow-lg hover:shadow-xl"
           >
-            <h4 className="text-xl font-bold mb-3 text-gray-700">Property Development (Nationwide)</h4>
+            <h4 className="text-xl font-bold border-0 mb-3 text-gray-700">Property Development (Nationwide)</h4>
             <p className="text-gray-700">
               Already own land? We manage building projects in any state in Nigeria
               while you monitor progress remotely.
             </p>
             <p className="text-sm text-gray-500 mt-4">
-              Transparent process • Client-first ownership
+              Transparent process • Milestone Documentation
             </p>
           </motion.div >
 
           <motion.div  
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
-            className="p-6 border rounded-xl shadow hover:shadow-lg"
+            className="p-6  border-0 bg-gray-50 rounded-xl shadow-lg hover:shadow-xl"
           >
             <h4 className="text-xl font-bold mb-3 text-gray-700">Documentation & Monitoring</h4>
             <p className="text-gray-700">
@@ -59,7 +59,7 @@ export default function Services() {
               and progress updates are shared at every stage.
             </p>
             <p className="text-sm text-gray-500 mt-4">
-              Transparent process • Client-first ownership
+              Transparent process • Bank-secured Documentation
             </p>
           </motion.div >
         </div>

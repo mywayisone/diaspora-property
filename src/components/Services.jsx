@@ -1,35 +1,70 @@
+import { motion } from "framer-motion";
+import useReveal from "../hooks/useReveal";
+
 export default function Services() {
+  
+  const [ref, visible] = useReveal();
+
   return (
-    <section id="services" className="py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <h3 className="text-3xl font-bold text-center mb-12">Our Services</h3>
+    <section 
+      ref={ref}
+      id="services"
+      className={`py-20 bg-white transition-all duration-700 ease-out
+        ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
+    >
+      <div className="max-w-6xl mx-auto px-6">
+        <h3 className="text-3xl md:text-4xl font-bold text-center text-gray-700 mb-12">
+          Our Services
+        </h3>
 
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="p-6 border rounded">
-            <h4 className="font-semibold mb-2">Land Acquisition (Akure)</h4>
-            <p className="text-gray-600">
-              We help clients acquire verified and genuine landed property in
-              Akure, Ondo State, handling due diligence and documentation.
+          <motion.div 
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="p-6 border rounded-xl shadow hover:shadow-lg"
+          >
+            <h4 className="text-xl font-bold mb-3 text-gray-700">Land Acquisition (Akure)</h4>
+            <p className="text-gray-700">
+              We help clients acquire verified and genuine landed property in Akure,
+              Ondo State, handling due diligence and documentation.
             </p>
-          </div>
-
-          <div className="p-6 border rounded">
-            <h4 className="font-semibold mb-2">Property Development (Nationwide)</h4>
-            <p className="text-gray-600">
-              Already own land? We manage building projects in any state in
-              Nigeria while you monitor progress remotely.
+            <p className="text-sm text-gray-500 mt-4">
+              Verified Documents • Client-first ownership
             </p>
-          </div>
+          </motion.div >
 
-          <div className="p-6 border rounded">
-            <h4 className="font-semibold mb-2">Documentation & Monitoring</h4>
-            <p className="text-gray-600">
+          <motion.div  
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="p-6 border rounded-xl shadow hover:shadow-lg"
+          >
+            <h4 className="text-xl font-bold mb-3 text-gray-700">Property Development (Nationwide)</h4>
+            <p className="text-gray-700">
+              Already own land? We manage building projects in any state in Nigeria
+              while you monitor progress remotely.
+            </p>
+            <p className="text-sm text-gray-500 mt-4">
+              Transparent process • Client-first ownership
+            </p>
+          </motion.div >
+
+          <motion.div  
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+            className="p-6 border rounded-xl shadow hover:shadow-lg"
+          >
+            <h4 className="text-xl font-bold mb-3 text-gray-700">Documentation & Monitoring</h4>
+            <p className="text-gray-700">
               Property documents are secured in the client’s name with a bank,
               and progress updates are shared at every stage.
             </p>
-          </div>
+            <p className="text-sm text-gray-500 mt-4">
+              Transparent process • Client-first ownership
+            </p>
+          </motion.div >
         </div>
       </div>
-    </section>
+    </section >
+
   );
 }

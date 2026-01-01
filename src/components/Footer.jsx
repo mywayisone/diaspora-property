@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaTikTok } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -13,23 +13,8 @@ export default function Footer() {
         {/* Social Icons */}
         <div className="flex space-x-4">
           <a
-            href="#"
-            className="p-3 bg-gray-800 rounded-full hover:bg-emerald-600 transition"
-            aria-label="Facebook"
-          >
-            <FaFacebookF />
-          </a>
-
-          <a
-            href="#"
-            className="p-3 bg-gray-800 rounded-full hover:bg-emerald-600 transition"
-            aria-label="Instagram"
-          >
-            <FaInstagram />
-          </a>
-
-          <a
-            href="#"
+            target="_blank"
+            href="https://x.com/diasporabuild4"
             className="p-3 bg-gray-800 rounded-full hover:bg-emerald-600 transition"
             aria-label="Twitter"
           >
@@ -37,11 +22,21 @@ export default function Footer() {
           </a>
 
           <a
+            target="_blank"
             href="#"
             className="p-3 bg-gray-800 rounded-full hover:bg-emerald-600 transition"
             aria-label="LinkedIn"
           >
-            <FaLinkedinIn />
+            <FaTikTok />
+          </a>
+
+          <a
+            target="_blank"
+            href="#"
+            className="p-3 bg-gray-800 rounded-full hover:bg-emerald-600 transition"
+            aria-label="Facebook"
+          >
+            <FaFacebookF />
           </a>
         </div>
       </div>

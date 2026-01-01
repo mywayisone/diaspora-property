@@ -116,12 +116,14 @@ export default function ContactForm() {
               className="w-full border-0 shadow rounded-lg p-3"
               name="country"
               placeholder="Country of Residence"
+              required
             />
 
             <input
               className="w-full border-0 shadow rounded-lg p-3"
               name="location"
               placeholder="Property Location"
+              required
             />
 
             <select
@@ -140,6 +142,7 @@ export default function ContactForm() {
               name="message"
               placeholder="Project Details"
               rows={4}
+              required
             />
 
             {/* 🔘 SUBMIT BUTTON */}

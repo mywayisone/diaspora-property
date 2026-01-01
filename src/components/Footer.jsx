@@ -23,7 +23,7 @@ export default function Footer() {
 
           <a
             target="_blank"
-            href="#"
+            href="https://tiktok.com/@diasporabuild4"
             className="p-3 bg-gray-800 rounded-full hover:bg-emerald-600 transition"
             aria-label="LinkedIn"
           >

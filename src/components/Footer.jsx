@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaTwitter, FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter, FaTiktok, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -23,9 +23,18 @@ export default function Footer() {
 
           <a
             target="_blank"
-            href="https://tiktok.com/@diasporabuild4"
+            href="https://www.linkedin.com/company/diasporabuild4/"
             className="p-3 bg-gray-800 rounded-full hover:bg-emerald-600 transition"
             aria-label="LinkedIn"
+          >
+            <FaLinkedin />
+          </a>
+
+          <a
+            target="_blank"
+            href="https://tiktok.com/@diasporabuild4"
+            className="p-3 bg-gray-800 rounded-full hover:bg-emerald-600 transition"
+            aria-label="TikTok"
           >
             <FaTiktok />
           </a>
